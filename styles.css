@@ -1,0 +1,107 @@
+body {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    position: relative;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px; 
+    height: 550px;
+    left: 50%;
+    margin: 100px -200px;
+    /* padding: 100px; */
+}
+
+.title {
+    color: white;
+}
+
+.text {
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(241, 236, 158);
+    width: 300px;
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding: 2px 10px;
+}
+
+.options {
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.option {
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: rgb(159, 233, 233);
+    width: 150px;
+    height: 30px;
+    margin: 0px 3px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+.grid-container-simple {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} /* make this container's display: none to make it invisible*/
+
+.grid-simple {
+    display: grid;
+    grid-template-rows: repeat(5, 50px);
+    grid-template-columns: repeat(4, 50px);
+    row-gap: 15px;
+    column-gap: 34px;
+    position: relative;
+    right: 6px;
+}
+
+.input {
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: rgb(159, 233, 233);
+    width: 60px;
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+.grid-container-scientific {
+    margin-top: 15px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-scientific {
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-columns: repeat(4, 50px);
+    row-gap: 15px;
+    column-gap: 34px;
+    position: relative;
+    right: 6px;
+}
+
+.delete {
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: rgb(159, 233, 233);
+    width: 311px;
+    height: 50px;
+    position: relative;
+    margin-top: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button:hover {
+    background-color: rgb(241, 236, 158);
+    cursor: pointer;
+}
